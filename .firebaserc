@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "portfolio-me-71118"
+  },
+  "targets": {
+    "portfolio-me-71118": {
+      "hosting": {
+        "portfolio-anax": [
+          "portfolio-anax"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
