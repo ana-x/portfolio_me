@@ -5,4 +5,5 @@ class ImageConstants{
   static String rect2="assets/svg/rectangle2.svg";
   static String rect3="assets/svg/rectangle3.svg";
   static String rect4="assets/svg/rectangle4.svg";
+  static String name="assets/svg/name.svg";
 }

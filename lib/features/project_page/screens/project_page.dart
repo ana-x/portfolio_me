@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_me/core/image/image_constants.dart';
 import 'package:portfolio_me/core/local_variable.dart';
+import 'package:portfolio_me/features/project_page/screens/project_List.dart';
 
 class ProjectPage extends StatefulWidget {
   const ProjectPage({super.key});
@@ -18,7 +19,7 @@ class _ProjectPageState extends State<ProjectPage> {
     scrWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      body:  Container(
+      body: Container(
         height: scrHeight,
         width: scrWidth,
         color: Colors.black,
@@ -27,31 +28,31 @@ class _ProjectPageState extends State<ProjectPage> {
             children: [
               Container(
                 color: const Color(0xff191919).withOpacity(0.5),
-                width: scrWidth*0.245,
+                width: scrWidth * 0.245,
                 height: scrHeight,
               ),
               SizedBox(
-                width: scrWidth*0.005,
+                width: scrWidth * 0.005,
               ),
               Container(
                 color: const Color(0xff191919).withOpacity(0.5),
-                width: scrWidth*0.245,
+                width: scrWidth * 0.245,
                 height: scrHeight,
               ),
               SizedBox(
-                width: scrWidth*0.005,
+                width: scrWidth * 0.005,
               ),
               Container(
                 color: const Color(0xff191919).withOpacity(0.5),
-                width: scrWidth*0.245,
+                width: scrWidth * 0.245,
                 height: scrHeight,
               ),
               SizedBox(
-                width: scrWidth*0.005,
+                width: scrWidth * 0.005,
               ),
               Container(
                 color: const Color(0xff191919).withOpacity(0.5),
-                width: scrWidth*0.245,
+                width: scrWidth * 0.245,
                 height: scrHeight,
               ),
             ],
@@ -60,15 +61,15 @@ class _ProjectPageState extends State<ProjectPage> {
             children: [
               Container(
                 color: const Color(0xff191919).withOpacity(0.3),
-                width: scrWidth*0.25,
+                width: scrWidth * 0.25,
                 height: scrHeight,
               ),
               SizedBox(
-                width: scrWidth*0.25,
+                width: scrWidth * 0.25,
               ),
               Container(
                 color: const Color(0xff191919).withOpacity(0.3),
-                width: scrWidth*0.245,
+                width: scrWidth * 0.245,
                 height: scrHeight,
               ),
             ],
@@ -90,88 +91,23 @@ class _ProjectPageState extends State<ProjectPage> {
             child: SvgPicture.asset(ImageConstants.portfolio),
           ),
           Positioned(
-            left: scrWidth * 0.16,
-            bottom: scrHeight * 0.14,
-            child: SizedBox(
-              child: Column(
-                children: [
-                  // RotatedBox(
-                  //   quarterTurns: -1,
-                  //   child: RichText(
-                  //     text: TextSpan(
-                  //       text: 'Flutter Developer\n',
-                  //       style: GoogleFonts.rajdhani(
-                  //           fontWeight: FontWeight.w400,
-                  //           fontSize: scrWidth*0.014,
-                  //           color: Colors.white),
-                  //       children: [
-                  //         TextSpan(
-                  //           text: 'based on Kerala\n',
-                  //           style: GoogleFonts.rajdhani(
-                  //               fontWeight: FontWeight.w300,
-                  //               fontSize: scrWidth*0.014,
-                  //               color: Colors.white),
-                  //         ),
-                  //         TextSpan(
-                  //           text: 'India',
-                  //           style: GoogleFonts.rajdhani(
-                  //               fontWeight: FontWeight.w300,
-                  //               fontSize: scrWidth*0.014,
-                  //               color: Colors.white),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // ),
-                  SizedBox(
-                    height: scrHeight * 0.03,
-                  ),
-                  SvgPicture.asset(ImageConstants.rect1),
-                ],
-              ),
-            ),
+            top: scrHeight * 0.2,
+            left: scrWidth * 0.8,
+            child: SvgPicture.asset(ImageConstants.rect1),
           ),
           Positioned(
-              top: scrHeight * 0.3,
-              left: scrWidth * 0.31,
+            left: scrWidth * 0.16,
+            bottom: scrHeight * 0.2,
+            child: SvgPicture.asset(ImageConstants.rect4),
+          ),
+          Positioned(
+              top: scrHeight * 0.28,
+              left: scrWidth * 0.4,
               child: SvgPicture.asset(ImageConstants.rect2)),
           Positioned(
-            top: scrHeight * 0.24,
+            top: scrHeight * 0.77,
             left: scrWidth * 0.42,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(
-                  height: scrHeight * 0.522,
-                  width: scrWidth * 0.353,
-                  child: Row(
-                    children: [
-                      // Text(
-                      //   "Hello\nI am\nAnas",
-                      //   style: GoogleFonts.poppins(
-                      //       height: 0.95,
-                      //       fontWeight: FontWeight.w600,
-                      //       fontSize: scrWidth*0.1,
-                      //       color: Colors.white),
-                      // ),
-                      Column(
-                        children: [
-                          SvgPicture.asset(ImageConstants.rect4),
-                          SizedBox(
-                            height: scrHeight * 0.06,
-                          ),
-                          SvgPicture.asset(ImageConstants.round),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: scrHeight * 0.04,
-                ),
-                SvgPicture.asset(ImageConstants.rect3),
-              ],
-            ),
+            child: SvgPicture.asset(ImageConstants.rect3),
           ),
           Positioned(
             top: scrHeight * 0.28,
@@ -186,7 +122,7 @@ class _ProjectPageState extends State<ProjectPage> {
                       style: GoogleFonts.rajdhani(
                         fontWeight: FontWeight.w300,
                         color: Colors.white,
-                        fontSize: scrWidth*0.014,
+                        fontSize: scrWidth * 0.014,
                       ),
                     ),
                   ),
@@ -222,7 +158,7 @@ class _ProjectPageState extends State<ProjectPage> {
                       style: GoogleFonts.rajdhani(
                         fontWeight: FontWeight.w300,
                         color: Colors.white,
-                        fontSize: scrWidth*0.014,
+                        fontSize: scrWidth * 0.014,
                       ),
                     ),
                   ),
@@ -236,7 +172,7 @@ class _ProjectPageState extends State<ProjectPage> {
                       style: GoogleFonts.rajdhani(
                         fontWeight: FontWeight.w300,
                         color: Colors.white,
-                        fontSize: scrWidth*0.014,
+                        fontSize: scrWidth * 0.014,
                       ),
                     ),
                   ),
@@ -245,13 +181,83 @@ class _ProjectPageState extends State<ProjectPage> {
             ),
           ),
           Positioned(
-              child: Center(
-                child: Text(
-                  "coming soon",
-                  style:
-                  GoogleFonts.rajdhani(color: Colors.white, fontSize: 40),
+            top: scrHeight * 0.3,
+            left: scrWidth * 0.2,
+            child: Text(
+              "Proj\nects",
+              style: GoogleFonts.poppins(
+                  height: 1.1,
+                  fontSize: scrWidth * 0.1,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600),
+            ),
+          ),
+          Positioned(
+            top: scrHeight * 0.54,
+            left: scrWidth * 0.42,
+            child: Column(
+              children: [
+                SvgPicture.asset(ImageConstants.round),
+                SizedBox(
+                  height: scrHeight * 0.04,
                 ),
-              ))
+                SvgPicture.asset(ImageConstants.round),
+              ],
+            ),
+          ),
+          Positioned(
+            top: scrHeight * 0.33,
+            left: scrWidth * 0.5,
+            child: SizedBox(
+              height: scrHeight * 0.3,
+              width: scrWidth * 0.4,
+              child: Text(
+                "As a passionate developer, I have dedicated a significant portion of my time to mastering "
+                "Flutter a versatile and powerful framework for building cross-platform mobile applications."
+                "In my portfolio, you'll find a collection of Flutter projects that showcase my proficiency "
+                "in creating seamless and visually appealing mobile experiences.",
+                style: GoogleFonts.rajdhani(
+                    fontSize: scrWidth * 0.02,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w200),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: scrHeight * 0.1,
+            right: scrWidth * 0.1,
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context, CupertinoPageRoute(builder: (context) => const ProjectList(),));
+              },
+              hoverColor: Colors.red,
+              child: Container(
+                width: scrWidth * 0.1,
+                height: scrHeight * 0.08,
+                decoration: BoxDecoration(
+                    color: const Color(0xff2A2222),
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(
+                      CupertinoIcons.arrow_right,
+                      color: Colors.white,
+                      size: scrWidth * 0.01,
+                    ),
+                    SizedBox(width: scrWidth*0.01,),
+                    Text(
+                      "See more",
+                      style: GoogleFonts.rajdhani(
+                        fontSize: scrWidth*0.01,
+                          fontWeight: FontWeight.w400, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          )
         ]),
       ),
     );

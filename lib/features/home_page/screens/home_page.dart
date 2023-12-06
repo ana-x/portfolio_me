@@ -143,34 +143,27 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: scrHeight * 0.522,
-                  width: scrWidth * 0.353,
-                  child: Row(
-                    children: [
-                      Text(
-                        "Hello\nI am\nAnas",
-                        style: GoogleFonts.poppins(
-                            height: 0.95,
-                            fontWeight: FontWeight.w600,
-                            fontSize: scrWidth * 0.1,
-                            color: Colors.white),
-                      ),
-                      Column(
-                        children: [
-                          SvgPicture.asset(ImageConstants.rect4),
-                          SizedBox(
-                            height: scrHeight * 0.06,
-                          ),
-                          SvgPicture.asset(ImageConstants.round),
-                        ],
-                      )
-                    ],
-                  ),
+                  height: scrHeight * 0.55,
+                  width: scrWidth * 0.36,
+                  child: SizedBox(width: scrWidth*0.35,child: SvgPicture.asset(ImageConstants.name)),
                 ),
                 SizedBox(
                   height: scrHeight * 0.04,
                 ),
                 SvgPicture.asset(ImageConstants.rect3),
+              ],
+            ),
+          ),
+          Positioned(
+            left: scrWidth*0.73,
+            top: scrHeight*0.23,
+            child: Column(
+              children: [
+                SvgPicture.asset(ImageConstants.rect4),
+                SizedBox(
+                  height: scrHeight * 0.06,
+                ),
+                SvgPicture.asset(ImageConstants.round),
               ],
             ),
           ),
