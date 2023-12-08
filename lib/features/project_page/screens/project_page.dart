@@ -193,7 +193,7 @@ class _ProjectPageState extends State<ProjectPage> {
             ),
           ),
           Positioned(
-            top: scrHeight * 0.54,
+            top: scrHeight * 0.57,
             left: scrWidth * 0.42,
             child: Column(
               children: [
