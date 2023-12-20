@@ -76,13 +76,14 @@ class _AboutPageState extends State<AboutPage> {
           ),
           Center(
             child: Text(
-              'Proj\nects',
+              'Ab_\nout',
               style: GoogleFonts.poppins(
                   fontSize: scrWidth * 0.26,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 10,
                   height: 0.9,
                   color: const Color(0xff2A2222).withOpacity(0.3)),
+                  // color: const Color(0xff2A2222).withOpacity(0.3)),
             ),
           ),
           Positioned(
@@ -129,6 +130,20 @@ class _AboutPageState extends State<AboutPage> {
                   SizedBox(
                     height: scrHeight * 0.07,
                   ),
+                  RotatedBox(
+                    quarterTurns: -1,
+                    child: Text(
+                      "Project",
+                      style: GoogleFonts.rajdhani(
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white,
+                        fontSize: scrWidth * 0.014,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: scrHeight * 0.07,
+                  ),
                   Container(
                     decoration: BoxDecoration(
                         color: const Color(0xff00B4CD).withOpacity(0.85),
@@ -138,27 +153,13 @@ class _AboutPageState extends State<AboutPage> {
                       child: RotatedBox(
                         quarterTurns: -1,
                         child: Text(
-                          "Project",
+                          "About",
                           style: GoogleFonts.rajdhani(
                             fontWeight: FontWeight.w300,
                             color: Colors.white,
                             fontSize: scrWidth * 0.014,
                           ),
                         ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: scrHeight * 0.07,
-                  ),
-                  RotatedBox(
-                    quarterTurns: -1,
-                    child: Text(
-                      "About",
-                      style: GoogleFonts.rajdhani(
-                        fontWeight: FontWeight.w300,
-                        color: Colors.white,
-                        fontSize: scrWidth * 0.014,
                       ),
                     ),
                   ),
@@ -193,8 +194,8 @@ class _AboutPageState extends State<AboutPage> {
             ),
           ),
           Positioned(
-            top: scrHeight * 0.6,
-            left: scrWidth * 0.78 ,
+            top: scrHeight * 0.57,
+            left: scrWidth * 0.785,
             child: Column(
               children: [
                 SvgPicture.asset(ImageConstants.round),
@@ -206,16 +207,15 @@ class _AboutPageState extends State<AboutPage> {
             ),
           ),
           Positioned(
-            top: scrHeight * 0.3,
+            top: scrHeight * 0.4,
             left: scrWidth * 0.1,
             child: SizedBox(
               height: scrHeight * 0.3,
               width: scrWidth * 0.4,
               child: Text(
-                "As a passionate developer, I have dedicated a significant portion of my time to mastering "
-                    "Flutter a versatile and powerful framework for building cross-platform mobile applications."
-                    "In my portfolio, you'll find a collection of Flutter projects that showcase my proficiency "
-                    "in creating seamless and visually appealing mobile experiences.",
+                "A professional bio or biography is a short overview of your experience. "
+                    "Professional bios usually include details about education, employment, "
+                    "achievements, and relevant skills .",
                 style: GoogleFonts.rajdhani(
                     fontSize: scrWidth * 0.02,
                     color: Colors.white,
@@ -227,9 +227,7 @@ class _AboutPageState extends State<AboutPage> {
             bottom: scrHeight * 0.1,
             right: scrWidth * 0.1,
             child: InkWell(
-              onTap: (){
-
-              },
+              onTap: () {},
               hoverColor: Colors.red,
               child: Container(
                 width: scrWidth * 0.1,
@@ -246,12 +244,15 @@ class _AboutPageState extends State<AboutPage> {
                       color: Colors.white,
                       size: scrWidth * 0.01,
                     ),
-                    SizedBox(width: scrWidth*0.01,),
+                    SizedBox(
+                      width: scrWidth * 0.01,
+                    ),
                     Text(
                       "See more",
                       style: GoogleFonts.rajdhani(
-                          fontSize: scrWidth*0.01,
-                          fontWeight: FontWeight.w400, color: Colors.white),
+                          fontSize: scrWidth * 0.01,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
                     ),
                   ],
                 ),

@@ -193,8 +193,8 @@ class _ProjectPageState extends State<ProjectPage> {
             ),
           ),
           Positioned(
-            top: scrHeight * 0.57,
-            left: scrWidth * 0.42,
+            top: scrHeight * 0.55,
+            left: scrWidth * 0.43,
             child: Column(
               children: [
                 SvgPicture.asset(ImageConstants.round),
